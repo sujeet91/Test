@@ -1,0 +1,35 @@
+
+<div class="row" style="margin-top:10%">
+    <div class="col-lg-4 col-md-4 login-card">User Login</div>
+    <div class="col-lg-3 col-md-4" style="padding:0px">
+        <form class="" role="form">
+            <div class="card ">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="pull-left">User Name</label>
+                        <input class="form-control input-sm" type="text" name="username" [(ngModel)]="model.username" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="pull-left">Password</label>
+                        <input class=" form-control input-sm" type="password" name="password" [(ngModel)]="model.password" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-sm pull-right" (click)="login(model)"> Login</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span>Register new user </span><a [routerLink]="['/signup']">Signup.</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+

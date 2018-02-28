@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    background-color: gray;
+    width: 100%;
+    left: 0;
+}
+.min-hieght {
+    height:300px !important;
+}
+.box-shadow {
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+.body-back {
+    background-color:lightgray;
+}
+.cust-container {
+max-width:100% !important;
+margin-top: 50px;
+}
+.max-width {
+    max-width: 95% !important;
+    margin: 10px 10px 10px 10px;
+}
+.full-width {
+    width: 98.3% !important;
+    margin: 10px 10px 10px 10px;
+}
+.min-top-height {
+    min-height:30px !important;
+}

@@ -1,0 +1,28 @@
+
+<div class="container cust-container">
+    <div class="row">
+        <table class="table table-striped jambo_table bulk_action">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Email ID</th>
+                    <th>DOB</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let lst of users; let i=index'>
+                    <td scope="row">{{i+1}}</td>
+                    <td>{{lst.Name}}</td>
+                    <td>{{lst.Address}}</td>
+                    <td>{{lst.Email}}</td>
+                    <td>{{lst.DOB | date:'MM/dd/yyyy'}}</td>
+                    <td><a (click)="openModal(template,lst)" id="{{i}}"><i class="fa fa-edit"></i></a></td>
+                </tr>
+    
+            </tbody>
+        </table>
+    </div>
+</div>

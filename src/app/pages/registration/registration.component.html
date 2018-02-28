@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+            <form class="" role="form">
+                <div class="card ">
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="pull-left">User Name</label>
+                            <input class="form-control input-sm" type="text" name="username" [(ngModel)]="model.username" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="pull-left">First Name</label>
+                            <input class="form-control input-sm" type="text" name="firstname" [(ngModel)]="model.firstname" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="pull-left">Last Name</label>
+                            <input class="form-control input-sm" type="text" name="lastname" [(ngModel)]="model.lastname" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="pull-left">Password</label>
+                            <input class=" form-control input-sm" type="password" name="password" [(ngModel)]="model.password" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group ">
+                            <div class="col-lg-4 col-xs-offset-4">
+                                    <a class="btn btn-default btn-sm pull-right " [routerLink]="['/login']">Login</a>
+                            </div>
+                            <div class="col-lg-4">
+                                    <button class="btn btn-primary btn-sm pull-right " (click)="register(model)"> Register</button> 
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
